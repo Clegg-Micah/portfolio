@@ -1,0 +1,247 @@
+/* ACME site -+- Screened Devices
+/* ********************************************
+* CSS Table of Contents
+* 1. Imports
+* 2. General Styles
+* 3. Mobile First Styles
+* 4. Large Screen Styles
+******************************************** */
+
+/* ********************************************
+* 1. Imports
+******************************************** */
+/* Get fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* ********************************************
+* 2. General Styles
+******************************************** */
+header {
+    background-color: #ffffff;
+    padding-bottom: 0;
+}
+nav {
+    background-color: #de2226;
+	font-family: "arial", sans-serif;
+	font-size: 4vw;
+	max-height: 100px;
+    max-width: 1100px;
+	padding-bottom: 1px;
+    padding-top: 1px;
+}
+#page-nav ul{
+	display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    padding-left: 0;
+	width: 75vw;
+}
+#page-nav li {
+    list-style: none;
+}
+nav a, nav a:link, nav a:visited, nav a:hover {
+	color: #ffffff;
+    text-decoration: none;
+}
+nav a:active {
+	background-color: #ffffff;
+    color: #de2226;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+/*
+#lang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 8vw;
+}
+#lang img {
+    width: 32px;
+    height: 24px;
+}
+*/
+body {
+	background-image: url(/acme/images/site/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Futura", "Roboto", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    background-color: #FFFFFF;
+    margin: 0 4vw;
+}
+main {
+    margin: 0 5px;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+}
+h2 {
+    font-size: 1.75em;
+    margin: .5em 0;
+}
+footer {
+	border-top: 5px;
+    border-top-color: black;
+    border-top-style: solid;
+    box-shadow: 0 1px 0 -1px;
+    margin-top: 5px;
+	text-align: center;
+}
+footer p {
+    margin: 0;
+}
+
+/* Home Page Styles */
+#home-feature {
+	background-image: url(/acme/images/site/feature.jpg);
+    background-size: cover;
+    height: 400px;
+    max-height: 50vh;
+}
+#home-feature ul {
+	align-items: flex-end;
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 10px;
+}
+#home-feature ul li {
+	color: #990033;
+    font-weight: 800;
+    list-style: none;
+    text-align: left;
+}
+
+/*bottom Home styles */
+aside {
+    display: flex;
+}
+/* Recipe Styles */
+#recipes {
+    width: 400px;
+}
+
+#recipes ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 400px;
+    text-align: center;
+}
+#recipes li img{
+    background-color: #808080;
+    max-width: 100px;
+    padding: 0 40px;
+}
+#recipes li figure {
+    margin:  0;
+}
+#recipes li a{
+    font-size: .75em;
+}
+#review {
+    margin-top: 1em;
+    width: 95vw;
+}
+/* Product Styles */
+
+/* Hide and Show content */
+.hide {
+    display: none;
+}
+.show {
+    display: contents;
+}
+
+
+/* ********************************************
+* 3. Mobile First Styles
+******************************************** */
+#wrapper {
+    width: 100%;
+}
+aside {
+    flex-direction: column-reverse;
+    padding-left: 0;
+}
+#recipes ul {
+	max-width: 95vw;
+    padding: 0;
+}
+#recipes {
+    display: flex;
+    flex-flow: row wrap;
+}
+#recipes li {
+    padding: 0;
+}
+#extra-reading {
+    display: flex;
+    flex-flow: column nowrap;
+}
+#content-box {
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+#content-box ul {
+	align-content: flex-end;
+	font-size: 1.25em;
+    list-style: none;
+    max-width: 425px;
+}
+#product-price {
+    color: #de2226;
+    font-size: 3em;
+    font-weight: 800;
+}
+#product-name {
+    font-size: 4em;
+}
+#product-image {
+	height: 50%;
+    width: 50%;
+}
+
+/* ********************************************
+* 4. Large Screen Styles
+******************************************** */
+@media screen and (min-width: 800px) {
+    #wrapper {
+		margin: 0 auto;
+        max-width: 1100px;
+    }
+    nav {
+        font-size: 2em;
+    }
+    aside {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #recipes ul {
+        max-width: 400px;
+    }
+    aside {
+        flex-flow: row nowrap;
+    }
+    #review {
+        max-width: 400px;
+    }
+    #content-box {
+        flex-direction: row;
+    }
+    #product-image {
+        height: 100%;
+		max-height: 500px;
+        max-width: 500px;
+        width: auto;
+    }
+}

@@ -1,0 +1,251 @@
+
+
+csslint: There are 50 problems in C:\Users\Micah Clegg\Documents\GitHub\cit230 backup\acme\css\screen.css.
+
+screen.css
+1: warning at line 14, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+screen.css
+2: warning at line 22, col 1
+Rule doesn't have all its properties in alphabetical order.
+nav {
+
+screen.css
+3: warning at line 31, col 1
+Rule doesn't have all its properties in alphabetical order.
+#page-nav ul{
+
+screen.css
+4: warning at line 31, col 1
+Don't use IDs in selectors.
+#page-nav ul{
+
+screen.css
+5: warning at line 38, col 1
+Don't use IDs in selectors.
+#page-nav li {
+
+screen.css
+6: warning at line 41, col 1
+Rule doesn't have all its properties in alphabetical order.
+nav a, nav a:link, nav a:visited, nav a:hover {
+
+screen.css
+7: warning at line 45, col 1
+Rule doesn't have all its properties in alphabetical order.
+nav a:active {
+
+screen.css
+8: warning at line 49, col 1
+Rule doesn't have all its properties in alphabetical order.
+img {
+
+screen.css
+9: warning at line 65, col 1
+Rule doesn't have all its properties in alphabetical order.
+body {
+
+screen.css
+10: warning at line 74, col 1
+Don't use IDs in selectors.
+#wrapper {
+
+screen.css
+11: warning at line 89, col 1
+Rule doesn't have all its properties in alphabetical order.
+footer {
+
+screen.css
+12: warning at line 102, col 1
+Don't use IDs in selectors.
+#home-feature {
+
+screen.css
+13: warning at line 102, col 1
+Rule doesn't have all its properties in alphabetical order.
+#home-feature {
+
+screen.css
+14: warning at line 108, col 1
+Don't use IDs in selectors.
+#home-feature ul {
+
+screen.css
+15: warning at line 108, col 1
+Rule doesn't have all its properties in alphabetical order.
+#home-feature ul {
+
+screen.css
+16: warning at line 114, col 1
+Don't use IDs in selectors.
+#home-feature ul li {
+
+screen.css
+17: warning at line 114, col 1
+Rule doesn't have all its properties in alphabetical order.
+#home-feature ul li {
+
+screen.css
+18: warning at line 120, col 1
+Heading (h2) has already been defined.
+h2 {
+
+screen.css
+19: warning at line 130, col 1
+Don't use IDs in selectors.
+#recipes {
+
+screen.css
+20: warning at line 134, col 1
+Don't use IDs in selectors.
+#recipes ul {
+
+screen.css
+21: warning at line 142, col 1
+Don't use IDs in selectors.
+#recipes li img{
+
+screen.css
+22: warning at line 147, col 1
+Don't use IDs in selectors.
+#recipes li figure {
+
+screen.css
+23: warning at line 150, col 1
+Don't use IDs in selectors.
+#recipes li a{
+
+screen.css
+24: warning at line 153, col 1
+Don't use IDs in selectors.
+#review {
+
+screen.css
+25: warning at line 153, col 1
+Rule doesn't have all its properties in alphabetical order.
+#review {
+
+screen.css
+26: warning at line 171, col 1
+Don't use IDs in selectors.
+#wrapper {
+
+screen.css
+27: warning at line 178, col 1
+Don't use IDs in selectors.
+#recipes ul {
+
+screen.css
+28: warning at line 178, col 1
+Rule doesn't have all its properties in alphabetical order.
+#recipes ul {
+
+screen.css
+29: warning at line 182, col 1
+Don't use IDs in selectors.
+#recipes {
+
+screen.css
+30: warning at line 186, col 1
+Don't use IDs in selectors.
+#recipes li {
+
+screen.css
+31: warning at line 189, col 1
+Don't use IDs in selectors.
+#extra-reading {
+
+screen.css
+32: warning at line 193, col 1
+Don't use IDs in selectors.
+#content-box {
+
+screen.css
+33: warning at line 193, col 1
+Rule doesn't have all its properties in alphabetical order.
+#content-box {
+
+screen.css
+34: warning at line 198, col 1
+Don't use IDs in selectors.
+#content-box ul {
+
+screen.css
+35: warning at line 198, col 1
+Rule doesn't have all its properties in alphabetical order.
+#content-box ul {
+
+screen.css
+36: warning at line 204, col 1
+Don't use IDs in selectors.
+#product-price {
+
+screen.css
+37: warning at line 209, col 1
+Don't use IDs in selectors.
+#product-name {
+
+screen.css
+38: warning at line 212, col 1
+Don't use IDs in selectors.
+#product-image {
+
+screen.css
+39: warning at line 212, col 1
+Rule doesn't have all its properties in alphabetical order.
+#product-image {
+
+screen.css
+40: warning at line 221, col 5
+Don't use IDs in selectors.
+    #wrapper {
+
+screen.css
+41: warning at line 221, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #wrapper {
+
+screen.css
+42: warning at line 232, col 5
+Don't use IDs in selectors.
+    #recipes ul {
+
+screen.css
+43: warning at line 238, col 5
+Don't use IDs in selectors.
+    #review {
+
+screen.css
+44: warning at line 241, col 5
+Don't use IDs in selectors.
+    #content-box {
+
+screen.css
+45: warning at line 244, col 5
+Don't use IDs in selectors.
+    #product-image {
+
+screen.css
+46: warning at line 244, col 5
+Rule doesn't have all its properties in alphabetical order.
+    #product-image {
+
+screen.css
+47: warning at line 247, col 9
+Duplicate property 'width' found.
+        width: auto;
+
+screen.css
+48: warning at line 248, col 9
+Duplicate property 'height' found.
+        height: auto;
+
+screen.css
+49: warning
+Too many font-size declarations (10), abstraction needed.
+
+screen.css
+50: warning
+You have 2 h2s defined in this stylesheet.

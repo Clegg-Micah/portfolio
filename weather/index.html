@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title id="title">Current city | Weather Site</title>
+        <meta name="description" content="Weather forecast for Current City">
+        <meta name="author" content="Micah Clegg">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
+    </head>
+    <!---collaboration with Carl Radke, Emily Togagae, Calvin Smoot--->
+    <body>
+        <div>
+            <header id="page-header">
+                <h1 id="site-brand">&#9748;The Weather Site</h1>
+            </header>
+            <nav id="page-nav">
+                <ul>
+                    <li><a href="/weather/index.html" title="View weather at your location">Home</a></li>
+                    <li><a href="/weather/search.html" title="Search for Weather at a location">Search</a></li>
+                    <li><a href="/weather/franklin.html" title="view weather in Franklin, Idaho">Franklin</a></li>
+                    <li><a href="/weather/greenville.html" title="view weather in Greenville, South Carolina">Greenville</a></li>
+                    <li>Springfield</li>
+                </ul>
+            </nav>
+            <p id="status"></p>
+            <main id="main" class="hide">
+                <h1 id="pagetitle" class="current-location"><strong>Current city</strong></h1>
+                <div id="locationInfo">
+
+                    <h2>Location:</h2>
+                    <ul>
+                        <li><b> Zip:</b> <span id="zip">83237</span> </li>
+                        <li><b> Elevation: </b><span id="elevation">4501</span> ft. </li>
+                        <li><b> Location: </b> <span id="latitude">42.0135</span>&deg;, <span id="longitude">111.8072</span>&deg;</li>
+                    </ul>
+                </div>
+
+                <div id="curWeather" class = "clear">
+                    <div id="smallConditions">
+                        <section id="temps" class="tile">
+                            <h2><b>Temperature</b></h2>
+                            <p id=currentTemp>24&deg;F</p>
+                            <div id="high" class="highLow">34F</div>
+                            <div id="low" class="highLow">21F</div>
+                            <p id="feel">Feels Like: <span id="feelTemp">??</span>&deg;F</p>
+                        </section>
+                        <section id="wind" class="tile">
+                            <h2><b>Wind</b></h2>
+                            <p class="northMark">N</p>
+                            <div id="dial" class="ne"></div>
+                            <p id="wind-speed">2 mph</p>
+                            <p id="wind-dir"><b>Direction: </b> NW</p>
+                            <p id="wind-gust"><b>Gusts: </b>5 mph</p>
+                        </section>
+                    </div>
+                </div>
+                <section id="video">
+                    <h2 id="video-header"><b>Video Forecast</b></h2>
+                    <img id="videoimage" src="https://icons.wxug.com/i/c/k/mostlycloudy.gif" alt="video image">
+                </section>
+                <section id="hourly">
+                    <h2><b>Hourly Forecast</b></h2>
+                    <ul>
+                        <li>12am: 21&deg;F</li>
+                        <li>1am: 21&deg;F</li>
+                        <li>2am: 21&deg;F</li>
+                        <li>3am: 20&deg;F</li>
+                        <li>4am: 20&deg;F</li>
+                        <li>5am: 20&deg;F</li>
+                        <li>6am: 20&deg;F</li>
+                        <li>7am: 21&deg;F</li>
+                        <li>8am: 25&deg;F</li>
+                        <li>9am: 28&deg;F</li>
+                        <li>10am: 30&deg;F</li>
+                        <li>11am: 34&deg;F</li>
+                        <li>12pm: 35&deg;F</li>
+                        <li>1pm: 37&deg;F</li>
+                        <li>2pm: 38&deg;F</li>
+                        <li>3pm: 39&deg;F</li>
+                        <li>4pm: 39&deg;F</li>
+                        <li>5pm: 39&deg;F</li>
+                        <li>6pm: 38&deg;F</li>
+                        <li>7pm: 36&deg;F</li>
+                        <li>8pm: 34&deg;F</li>
+                        <li>9pm: 33&deg;F</li>
+                        <li>10pm: 33&deg;F</li>
+                        <li>11pm: 31&deg;F</li>
+                        <li>12pm: 31&deg;F</li>
+                    </ul>
+                </section>
+
+            </main>
+            <footer>
+                <span id="copyright">&copy;2018 Weather Site</span>
+                <span id="credit">Weather Information Provided By: </span>
+                <img id="credit-img" src="/weather/images/wulogo_rev.png" alt="Weather Underground Logo">
+            </footer>
+        </div>
+        <script src="/weather/js/function.js"></script>
+    </body>
+
+</html>

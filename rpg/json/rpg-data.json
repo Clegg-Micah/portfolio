@@ -1,0 +1,92 @@
+{
+    "monsters": [
+        {
+            "name": "Goblin",
+            "maxHP": 5,
+            "attack": 3,
+            "armor": 1,
+            "type":"Monster",
+            "gold": 4
+        },
+        {
+            "name": "Goblin Veteran",
+            "maxHP": 10,
+            "attack": 2,
+            "armor": 2,
+            "type":"Monster",
+            "gold": 8
+        },
+        {
+            "name": "Goblin Swarm",
+            "maxHP": 15,
+            "attack": 5,
+            "armor": 0,
+            "type":"Monster",
+            "gold": 16
+        }
+    ],
+    "weapons": [
+        {
+            "name": "None",
+            "attack": 0,
+            "cost": 0
+        },
+        {
+            "name": "Big Stick",
+            "attack": 1,
+            "cost": 10
+        },
+        {
+            "name": "Copper Sword",
+            "attack": 2,
+            "cost": 25
+        }
+    ],
+    "armor": [
+        {
+            "name": "Plain Clothes",
+            "armor": 0,
+            "cost": 0
+        },
+        {
+            "name": "Leather Armor",
+            "armor": 1,
+            "cost": 15
+        },
+        {
+            "name": "Chainmail",
+            "armor": 3,
+            "cost": 50
+        }
+    ],
+    "starting-stats": [
+        {
+            "name": "Warrior",
+            "strength": 7,
+            "agility": 5,
+            "endurance": 7,
+            "pow": 3
+        },
+        {
+            "name": "Ranger",
+            "strength": 5,
+            "agility": 7,
+            "endurance": 5,
+            "pow": 5
+        },
+        {
+            "name": "Cleric",
+            "strength": 5,
+            "agility": 3,
+            "endurance": 5,
+            "pow": 9
+        },
+        {
+            "name": "Paladin",
+            "strength": 7,
+            "agility": 3,
+            "endurance": 5,
+            "pow": 7
+        }
+        ]
+}

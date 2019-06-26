@@ -1,0 +1,292 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+header {
+    height: 5vh;
+}
+
+header > h1,
+footer {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+}
+
+main > div {
+    height: auto;
+    width: 95vw;
+    border: 5px solid green;
+    text-align: center;
+    padding: 1em;
+}
+
+#main-menu {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-wrapper {
+    height: 80vh;
+    display: grid;
+    grid-template-columns:2fr 3fr;
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    /*grid gap will be based on border rather than using a grid gap*/
+    background-color: gray;
+}
+
+.grid-wrapper > * {
+    background-color: black;
+    color: white;
+    border: 5px white solid;
+    border-radius: 10px;
+}
+
+.stats {
+    grid-row: 1/ 2;
+    grid-column: 1;
+}
+
+.stats > h1,
+.stats > h2 {
+    line-height: .5em;
+}
+
+.menu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.display {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.picture {
+    flex-grow: 1;
+    background-image: url("../assets/img/monster_goblin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+.actions {
+    width: auto;
+    margin: auto;
+    background-color: black;
+    align-self: flex-end;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+.actions {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.actions button {
+    width: 50px;
+    height: 40px;
+}
+
+.console {
+    background-color: black;
+    max-height: 90%;
+    grid-row: 3 / 5;
+    grid-column: 1 / 3;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* Buttons and Forms */
+button {
+    width: 5em;
+    height: 2em;
+    position: relative;
+}
+
+.videobox {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.videobox > video {
+    margin: auto;
+}
+.videobox > button {
+    margin:  1em auto;
+    width: 10em;
+    height: 5em;
+}
+
+.ingame-button:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 25%;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.ingame-button:hover.ingame-button:before {
+    transition: .5s;
+    border-left: 10px solid white;
+}
+
+.combat-button {
+    transition: .25s;
+    border: 5px solid transparent;
+}
+
+.combat-button:hover {
+    border: 5px solid red;
+}
+
+.combat-button:active {
+    transition: 0s;
+    background-color: red;
+}
+
+input {
+    width: 10em;
+}
+
+.disabled {
+    background: #F5F5F5;
+    color: #C3C3C3;
+    cursor: none;
+    pointer-events: none;
+    transition: 1s;
+}
+
+footer {
+    height: 5vh;
+}
+
+.player-info>li {
+    transform:scale(1.25);
+}
+.console>p:hover {
+    transition: .25s;
+    transform: scale(1.5);
+}
+
+.flash {
+    animation: flash 1s ease-out;
+}
+@keyframes flash {
+
+    /*Actually refers to the death animation of a monster */
+    from {
+        opacity: 1;
+        transform: skewX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: skewX(90deg);
+    }
+}
+
+.shake {
+    animation: shake .5s linear 1;
+    animation-delay: .25s;
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(-.5em);
+    }
+
+    75% {
+        transform: translateX(1em);
+    }
+
+    100% {
+        transform: translateX(-.5em);
+    }
+}
+
+.slash {
+    animation: slash .5s linear backwards;
+}
+
+@keyframes slash {
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+}
+
+/* Utility Classes
+* Utility Classes should be at the end so that nothing overwrites them.
+*/
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .actions > ul {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main * {
+        background-color: red;
+    }
+}

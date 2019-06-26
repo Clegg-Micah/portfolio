@@ -1,0 +1,143 @@
+
+
+csslint: There are 28 problems in C:\Users\Micah Clegg\Documents\GitHub\cit230 backup\acme\css\screen.css.
+
+screen.css
+1: warning at line 14, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+screen.css
+2: warning at line 31, col 1
+Don't use IDs in selectors.
+#page-nav ul{
+
+screen.css
+3: warning at line 38, col 1
+Don't use IDs in selectors.
+#page-nav li {
+
+screen.css
+4: warning at line 74, col 1
+Don't use IDs in selectors.
+#wrapper {
+
+screen.css
+5: warning at line 103, col 1
+Don't use IDs in selectors.
+#home-feature {
+
+screen.css
+6: warning at line 109, col 1
+Don't use IDs in selectors.
+#home-feature ul {
+
+screen.css
+7: warning at line 115, col 1
+Don't use IDs in selectors.
+#home-feature ul li {
+
+screen.css
+8: warning at line 127, col 1
+Don't use IDs in selectors.
+#recipes {
+
+screen.css
+9: warning at line 131, col 1
+Don't use IDs in selectors.
+#recipes ul {
+
+screen.css
+10: warning at line 139, col 1
+Don't use IDs in selectors.
+#recipes li img{
+
+screen.css
+11: warning at line 144, col 1
+Don't use IDs in selectors.
+#recipes li figure {
+
+screen.css
+12: warning at line 147, col 1
+Don't use IDs in selectors.
+#recipes li a{
+
+screen.css
+13: warning at line 150, col 1
+Don't use IDs in selectors.
+#review {
+
+screen.css
+14: warning at line 168, col 1
+Don't use IDs in selectors.
+#wrapper {
+
+screen.css
+15: warning at line 175, col 1
+Don't use IDs in selectors.
+#recipes ul {
+
+screen.css
+16: warning at line 179, col 1
+Don't use IDs in selectors.
+#recipes {
+
+screen.css
+17: warning at line 183, col 1
+Don't use IDs in selectors.
+#recipes li {
+
+screen.css
+18: warning at line 186, col 1
+Don't use IDs in selectors.
+#extra-reading {
+
+screen.css
+19: warning at line 190, col 1
+Don't use IDs in selectors.
+#content-box {
+
+screen.css
+20: warning at line 195, col 1
+Don't use IDs in selectors.
+#content-box ul {
+
+screen.css
+21: warning at line 201, col 1
+Don't use IDs in selectors.
+#product-price {
+
+screen.css
+22: warning at line 206, col 1
+Don't use IDs in selectors.
+#product-name {
+
+screen.css
+23: warning at line 209, col 1
+Don't use IDs in selectors.
+#product-image {
+
+screen.css
+24: warning at line 218, col 5
+Don't use IDs in selectors.
+    #wrapper {
+
+screen.css
+25: warning at line 229, col 5
+Don't use IDs in selectors.
+    #recipes ul {
+
+screen.css
+26: warning at line 235, col 5
+Don't use IDs in selectors.
+    #review {
+
+screen.css
+27: warning at line 238, col 5
+Don't use IDs in selectors.
+    #content-box {
+
+screen.css
+28: warning at line 241, col 5
+Don't use IDs in selectors.
+    #product-image {

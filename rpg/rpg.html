@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="title">Micah Clegg | CIT 261</title>
+    <meta name="author" content="Micah Clegg">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/rpg-screen.css" media="screen">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="page Header">
+            <h1>The Tomb of Mardok</h1>
+        </header>
+        <nav id="page-nav">
+
+        </nav>
+        <main>
+            <div id="menu-main">
+                <span>A role-playing game by Micah Clegg</span>
+                <ul id="menu-main-list">
+                    <li><button id="menu-new-game" class="menu-button">New Game</button></li>
+                    <li><button id="menu-load-game" class="menu-button disabled">Load Game</button></li>
+<!--
+                    <li><button id="menu-option" class="menu-button disabled">Options</button></li>
+-->
+                    <li><button id="menu-credits" class="menu-button ">Credits</button></li>
+
+                </ul>
+            </div>
+            <div id="char-creation" class="hide">
+                <form name="char-create" id="create-form" method="post">
+                    Enter your character's name:
+                    <input name="charname" type="text" id="create-name" class="create-char-data">
+                    <!--
+                   <p>Select your profession:
+                      <select id="create-profession" class="create-char-data">
+                          <option value="Warrior">Warrior</option>
+                          <option value="Ranger">Ranger</option>
+                      </select>
+                   </p>
+<-->
+                </form>
+                <button id="create-back">Back to Title</button>
+                <button id="create-character">Create Character!</button>
+                <div id="results" class="hide">Results will display here!</div>
+            </div>
+            <div class="grid-wrapper hide" id="game-display">
+                <div id="stats" class="stats">
+                    <h1 id="p-name">Player</h1>
+                    <ul id="player-info" class="player-info">
+                        <li>HP: <span id="p-hp"></span></li>
+                        <!--HP is dynamically created-->
+                        <li>Gold: <span id="p-gold"></span></li>
+<!--
+                    </ul>
+                    <ul id="p-equipped">
+                        <li>Weapon: <span id="p-weapon" class="player-equip">None</span></li>
+                        <li>Armor: <span id="p-armor" class="player-equip">None</span></li>
+
+                        <ul id="p-inventory">
+
+                        </ul>
+-->
+                    </ul>
+                </div>
+                <nav class="menu">
+                    <ul id="menu-nav">
+                        <li><button id="new-adventure" class="ingame-button">New Adventure</button></li>
+                        <li><button id="to-town" class="ingame-button">Go to Town</button></li>
+                        <li><button id="save-game" class="ingame-button">Save</button></li>
+                        <li><button id="menu-back" class="ingame-button">Return to Title</button></li>
+                    </ul>
+                </nav>
+                <div id="display" class="display">
+                  <div id="town-interface" class="town hide">
+                      <button id="rest">Rest at the Inn. (5 gold)</button>
+                  </div>
+                   <div id="picture-box" class="picture hide">
+<!--                       <img src="assets/img/monster_goblin.png" alt="A wild goblin">-->
+                   </div>
+                   <p id="combat-text" class="hide"></p>
+                    <div>
+                        <ul id="combat-menu" class="actions hide">
+                            <li><button id="combat-attack" class="combat-button disabled">Attack</button></li>
+                            <li><button id="combat-defend" class="combat-button disabled">Defend</button></li>
+                            <li><button id="combat-flee" class="combat-button disabled">Flee</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="console" class="console">Console</div>
+            </div>
+            <div id="video-box" class="videobox hide">
+                <p>THIS IS A PLACEHOLDER VIDEO</p>
+                <p>It will eventually be replaced by a video detailing the credits.</p>
+                <video id="video_1" width="720" height="480" controls>
+                    <source src="assets/video/SampleVideo_720x480_5mb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="video-back">Back to Main Menu</button>
+            </div>
+        </main>
+        <footer>
+            <p><small>2018 &copy; Micah Clegg, All rights reserved.</small></p>
+            <p><a href="" title="View the JavaScript code in GitHub">View the Source Code</a></p>
+        </footer>
+        <div id="audio-list" class="hide">
+            <audio id="hit_01" src="assets/audio/hits/hit01.mp3" type="audio/mp3" id="hit_01"></audio>
+            <audio id="death_goblin" src="assets/audio/goblin_death.wav" type="audio/wav" ></audio>
+        </div>
+
+        <script type="text/javascript" src="js/rpg.js"></script>
+    </div>
+</body>
+
+</html>
